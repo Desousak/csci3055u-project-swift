@@ -1,3 +1,2 @@
-This folder contains the sample code to illustrate some useful
-functionalities and data structures offered by the standard
-library of the language.
+# Standard Library Example
+> This example program demonstrates the functionality available in the Swift Standard Library. To run it, simply run the command: `swift standardLib.swift`

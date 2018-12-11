@@ -1,2 +1,2 @@
-This folder includes the sample code to illustrate
-the basic syntax of the language.
+# General Syntax
+> This example program demonstrates the general syntax of Swift

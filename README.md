@@ -163,7 +163,62 @@ var = value["temp"]
 
 # Analysis of the language
 
-> _Organize your report according to the project description
-document_.
+## Programming Style:
+>
+> Swift, at its core, is not purely object oriented or functional, it has elements of both. Since it has syntax that is very similar to Objective-C - strictly object oriented code can be written. Doing this, however, will not utilize Swift to its full potential. Swift was made to allow developers to use the core aspects of both functional and object oriented programming styles to write safe, easy to maintain and fast code.
+
+## Meta Programming:
+>
+> At of now, Swift does not have native support for meta programming. Until the day that it is added natively, *Sourcery* (https://github.com/krzysztofzablocki/Sourcery) brings Meta-Programming to Swift. 
+
+## Symbol Resolution:
+>
+> Swift has native support for Symbol Resolution / Closure.
+
+An example of closure in Swift is:
+```swift
+//This code is from the Swift Docs
+func backward(_ s1: String, _ s2: String) -> Bool {
+    return s1 > s2
+}
+
+let names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
+var reversedNames = names.sorted(by: backward)
+// reversedNames is equal to ["Ewa", "Daniella", "Chris", "Barry", "Alex"]
+```
+
+## Scoping Rules:
+> 
+> Currently, Swift uses Lexical Scoping as standard as Dynamic scoping is not available.
+
+## Functional Programming Constructs:
+>
+> There are many functional programming constructs supported by Swift. 
+
+For example, some example code to return even numbers from a collection:
+```swift
+//Taken from https://medium.com/@sdrzn/functional-programming-in-swift-221a8cabb8c
+let evenNumbers = [1, 2, 3, 4, 5].filter { (number) -> Bool in
+    if number % 2 == 0 {
+        return true
+    } else {
+        return false
+    }
+}
+```
+
+## Type System:
+>
+> Swift is a compiled language - meaning it is a statically typed. With Cocoa, dynamic classes can be used from the Objective-C runtime library - but that does not make it a dynamically typed language.
+
+## Strengths and Weaknesses:
+> ### Pros:
+> - The goal of Swift was to provide a language that is concise. Code written in languages such as Objective-C are roughtly 70% longer to accomplish the same tasks.
+> - Code written in Swift is generally more transparent. This produces code that is "future-proof" and scalable.
+> - Has interoperability with Objective-C, meaning that Swift can utilize libraries from it. This results in a large library pool that Swift can access.
+> ### Cons:
+> - Swift is generally only supported on Apple devices such as: All IPads and IPhones, MacOS, Apple TV, etc. 
+> - Newer versions of Swift commonly break compatibility with the older language versions,  meaning older Swift code must be refactored to support the new language update.
+> - Earlier versions of Swift have performance issues, although speed has been improved in later versions of Swift.
 
 
